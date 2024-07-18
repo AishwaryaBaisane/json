@@ -10,22 +10,43 @@ class PhotosPage extends StatelessWidget {
     PhotosProvider photosProvider = Provider.of(context, listen: false);
     return SafeArea(
       child: Scaffold(
+        backgroundColor: Colors.black12,
         appBar: AppBar(
+          backgroundColor: Colors.black,
           centerTitle: true,
-          title: Text('Json Data'),
+          bottomOpacity: 3,
+          elevation: 3,
+          shadowColor: Colors.white,
+          title: Text(
+            'Json Data',
+            style: TextStyle(
+              color: Colors.white,
+              fontSize: 30,
+            ),
+          ),
         ),
         body: ListView.builder(
           itemCount: photosProvider.PhotosList.length,
-          itemBuilder: (context, index) => ListTile(
-            title: Text(photosProvider.PhotosList[index].title),
-            leading: Container(
-              height: 100,
-              width: 80,
-              child: Image(
-                image: NetworkImage(
-                  photosProvider.PhotosList[index].url,
+          itemBuilder: (context, index) => Card(
+            margin: EdgeInsets.all(7),
+            color: Colors.white24,
+            child: ListTile(
+              title: Text(
+                photosProvider.PhotosList[index].title,
+                style: TextStyle(color: Colors.white,fontWeight: FontWeight.w500),
+              ),
+              leading: Container(
+                height: 150,
+                width: 60,
+                decoration: BoxDecoration(
+                  shape: BoxShape.circle,
+                  image: DecorationImage(
+                    image: NetworkImage(
+                      photosProvider.PhotosList[index].url,
+                    ),
+                    fit: BoxFit.cover,
+                  ),
                 ),
-                fit: BoxFit.cover,
               ),
             ),
           ),
