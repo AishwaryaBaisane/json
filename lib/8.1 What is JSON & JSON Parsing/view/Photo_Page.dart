@@ -29,11 +29,12 @@ class PhotosPage extends StatelessWidget {
           itemCount: photosProvider.PhotosList.length,
           itemBuilder: (context, index) => Card(
             margin: EdgeInsets.all(7),
-            color: Colors.white24,
+            color: Colors.white,
             child: ListTile(
               title: Text(
                 photosProvider.PhotosList[index].title,
-                style: TextStyle(color: Colors.white,fontWeight: FontWeight.w500),
+                style:
+                    TextStyle(color: Colors.black, fontWeight: FontWeight.w500),
               ),
               leading: Container(
                 height: 150,
