@@ -2,7 +2,7 @@ import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:json/8.1%20What%20is%20JSON%20&%20JSON%20Parsing/modal/User_model.dart';
+import 'package:json/8.1(2)%20User%20Data/model/User_model.dart';
 
 class UserProvider extends ChangeNotifier
 {

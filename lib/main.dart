@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:json/8.1%20What%20is%20JSON%20&%20JSON%20Parsing/provider/Photos_provider.dart';
-import 'package:json/8.1%20What%20is%20JSON%20&%20JSON%20Parsing/provider/User_Provider.dart';
-import 'package:json/8.1%20What%20is%20JSON%20&%20JSON%20Parsing/view/Photo_Page.dart';
-import 'package:json/8.1%20What%20is%20JSON%20&%20JSON%20Parsing/view/User_page.dart';
+import 'package:json/8.1(2)%20User%20Data/provider/User_Provider.dart';
+import 'package:json/8.1(2)%20User%20Data/view/User_page.dart';
 import 'package:provider/provider.dart';
 
 void main() {
