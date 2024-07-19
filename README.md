@@ -1,4 +1,4 @@
-[json_vedio3.webm](https://github.com/user-attachments/assets/b8b2008a-ba6b-42cd-8120-53b21cf63092)## 8.1 What is Json & Json Parsing? :-
+## 8.1 What is Json & Json Parsing? :-
 
 ### Json :-
 - JSON (JavaScript Object Notation) is a widely used format for exchanging data between different systems and platforms.
