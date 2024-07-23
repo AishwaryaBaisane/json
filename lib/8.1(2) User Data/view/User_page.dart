@@ -27,29 +27,32 @@ class User_Page extends StatelessWidget {
             ),
           ),
         ),
-        body: ListView.builder(
-          itemCount: userProvider.UserList.length,
-          itemBuilder: (context, index) => Card(
-            // shape: ,
-            elevation: 4,
-            margin: EdgeInsets.all(5),
-            color: Colors.white,
-            child: ListTile(
-              leading: Text(userProvider.UserList[index].id.toString(),
-                  style: TextStyle(fontSize: width * 0.06)),
-              title: Text(
-                userProvider.UserList[index].name,
-                style: TextStyle(fontWeight: FontWeight.w600, fontSize: 17),
-              ),
-              subtitle: Text(
-                userProvider.UserList[index].username,
-                style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
-              ),
-              trailing: Text(
-                userProvider.UserList[index].company.name +
-                    "\n" +
-                    userProvider.UserList[index].address.geo.lng,
-                style: TextStyle(fontSize: 13),
+        body: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: ListView.builder(
+            itemCount: userProvider.UserList.length,
+            itemBuilder: (context, index) => Card(
+              // shape: ,
+              elevation: 4,
+              margin: EdgeInsets.all(5),
+              color: Colors.white,
+              child: ListTile(
+                leading: Text(userProvider.UserList[index].id.toString(),
+                    style: TextStyle(fontSize: width * 0.05)),
+                title: Text(
+                  userProvider.UserList[index].name,
+                  style: TextStyle(fontWeight: FontWeight.w600, fontSize: 17),
+                ),
+                subtitle: Text(
+                  userProvider.UserList[index].username,
+                  style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
+                ),
+                trailing: Text(
+                  userProvider.UserList[index].company.name +
+                      "\n" +
+                      userProvider.UserList[index].address.geo.lng,
+                  style: TextStyle(fontSize: 13),
+                ),
               ),
             ),
           ),
