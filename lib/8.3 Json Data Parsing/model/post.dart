@@ -1,4 +1,3 @@
-
 class PostsModal {
   late int total, skip, limit;
   late List<Posts> posts;
